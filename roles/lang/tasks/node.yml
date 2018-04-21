@@ -12,6 +12,6 @@
       node -v
   register: res
   failed_when: no
-  changed_when: res.rc == 0
+  changed_when: res.rc != 0
   notify:
     - Install nodejs
