@@ -1,0 +1,12 @@
+---
+- name: Restart Dock
+  shell: |
+    killall Dock
+
+- name: Restart Finder
+  shell: |
+    killall Finder
+
+- name: dummy handler
+  shell: |
+    echo dummy

@@ -1,0 +1,14 @@
+---
+modify_zprofile_for_go:
+  - { line: "export GOPATH=$HOME/.go" }
+  - { line: "export PATH=$PATH:$GOPATH/bin" }
+
+modify_zprofile_for_node:
+  - { line: "NODEBREW_HOME=/usr/local/var/nodebrew/current" }
+  - { line: "export NODEBREW_HOME" }
+  - { line: "export NODEBREW_ROOT=/usr/local/var/nodebrew" }
+  - { line: "export PATH=$PATH:$NODEBREW_HOME/bin" }
+
+pip3_packages:
+  - { name: flake8 }
+  - { name: jedi }

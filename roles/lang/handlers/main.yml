@@ -1,0 +1,8 @@
+---
+- name: Install Ruby via rbenv
+  shell: |
+    bash -cl 'rbenv install $(rbenv install -l | grep -v - | tail -1)'
+
+- name: Install nodejs
+  shell: |
+    zsh -cl 'nodebrew setup && nodebrew install-binary stable'

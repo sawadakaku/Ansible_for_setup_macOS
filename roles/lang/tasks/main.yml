@@ -1,0 +1,16 @@
+---
+- import_tasks: ruby.yml
+  tags:
+    - ruby
+
+- import_tasks: go.yml
+  tags:
+    - go
+
+- import_tasks: python3.yml
+  tags:
+    - python3
+
+- import_tasks: node.yml
+  tags:
+    - node

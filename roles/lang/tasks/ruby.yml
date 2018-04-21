@@ -1,0 +1,9 @@
+---
+- name: Check ruby version
+  shell: |
+    rbenv versions | grep $(rbenv install -l | grep -v - | tail -1)
+  register: res
+  failed_when: no
+  changed_when: res.rc != 0
+  notify:
+    - Install Ruby via rbenv

@@ -1,0 +1,8 @@
+---
+- name: Setup BasicTeX for Japanese environment
+  become: yes
+  become_method: sudo
+  shell: |
+    tlmgr update --self --all
+    tlmgr paper a4
+    tlmgr install collection-langjapanese

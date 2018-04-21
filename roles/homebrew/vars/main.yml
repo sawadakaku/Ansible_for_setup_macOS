@@ -1,0 +1,41 @@
+---
+homebrew_cask_packages:
+  - { name: google-chrome }
+  - { name: slack }
+  - { name: visual-studio-code }
+  - { name: kindle }
+  - { name: vlc }
+  - { name: google-backup-and-sync }
+  - { name: onedrive }
+  - { name: skype }
+  - { name: wireshark }
+  - { name: duet }
+  - { name: zoomus }
+  - { name: tomighty }
+  - { name: docker }
+  - { name: google-cloud-sdk }
+  - { name: java }
+  - { name: basictex }
+
+homebrew_packages:
+  - { name: ansible }
+  - { name: git }
+  - { name: zsh }
+  - { name: zsh-completions }
+  - { name: zsh-autosuggestions }
+  - { name: tmux }
+  - { name: watch }
+  - { name: pstree }
+  - { name: wget }
+  - { name: lua }
+  - { name: python }
+  - { name: go }
+  - { name: rbenv }
+  - { name: nodebrew }
+  - { name: p7zip }
+  - { name: jq }
+  - { name: awscli }
+  - { name: gcc }
+  - { name: rename }
+  - { name: fontconfig }
+  - { name: vim, install_options: [with-lua, with-override-system-vi ]}

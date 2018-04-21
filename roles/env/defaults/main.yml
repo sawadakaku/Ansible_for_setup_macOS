@@ -1,0 +1,11 @@
+---
+git_repositories:
+    - { repo: "https://github.com/sawadakaku/dotfiles.git", dest: "{{ ansible_user_dir }}/dotfiles" }
+    - { repo: "https://github.com/edihbrandon/RictyDiminished.git", dest: "{{ ansible_user_dir }}/Documents/Fonts/" }
+
+setup_repositories:
+  - { target: "full", chdir: "{{ ansible_user_dir }}/dotfiles" }
+
+modify_zshrc:
+  - { line: "if [ -f '/usr/local/share/zsh-completions/' ]; then fpath=('/usr/local/share/zsh-completions/' $fpath); fi" }
+  - { line: "if [ -f '/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh' ]; then source '/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh'; fi" }

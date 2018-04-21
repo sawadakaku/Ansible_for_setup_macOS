@@ -1,0 +1,4 @@
+---
+git_user_info_replace:
+  - { dest: "{{ansible_user_dir}}/dotfiles/.gitconfig", regexp: "{{ '{' }}{ your name }{{ '}' }}", replace: "your name"} 
+  - { dest: "{{ansible_user_dir}}/dotfiles/.gitconfig", regexp: "{{ '{' }}{ your email }{{ '}' }}", replace: "your email"} 

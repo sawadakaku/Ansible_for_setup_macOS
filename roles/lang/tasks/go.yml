@@ -1,0 +1,8 @@
+---
+- name: modify .zprofile for gopath
+  lineinfile:
+    dest: ~/.zprofile
+    state: present
+    line: "{{ item.line }}"
+  with_items:
+    - "{{ modify_zprofile_for_go }}"
