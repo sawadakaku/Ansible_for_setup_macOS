@@ -38,4 +38,5 @@ homebrew_packages:
   - { name: gcc }
   - { name: rename }
   - { name: fontconfig }
+  - { name: graphviz }
   - { name: vim, install_options: [with-lua, with-override-system-vi ]}
