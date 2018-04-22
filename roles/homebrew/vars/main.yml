@@ -24,6 +24,7 @@ homebrew_packages:
   - { name: zsh-completions }
   - { name: zsh-autosuggestions }
   - { name: tmux }
+  - { name: htop }
   - { name: watch }
   - { name: pstree }
   - { name: wget }
